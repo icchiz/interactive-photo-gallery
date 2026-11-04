@@ -9,8 +9,8 @@ function upDate(previewPic) {
    
     container.style.backgroundImage = `url('${previewPic.src}')`;
 
- 
-    container.innerHTML = `<span style="background-color: rgba(0, 0, 0, 0.75); color: #ffffff; width: 100%; padding: 12px; box-sizing: border-box;">${previewPic.alt}</span>`;
+   
+    container.innerHTML = `<span style="background-color: rgba(0, 0, 0, 0.75); color: #ffffff; width: 100%; padding: 14px; box-sizing: border-box; font-size: 1.1rem;">${previewPic.alt}</span>`;
 }
 
 
@@ -19,8 +19,6 @@ function unDo() {
 
     
     container.style.backgroundImage = "url('')";
-
-    
     container.innerHTML = "Hover over an image below to display here.";
 
     console.log("Triggered: Mouseout event detected, restored to original state.");
